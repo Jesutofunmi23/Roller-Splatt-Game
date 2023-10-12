@@ -90,13 +90,12 @@ public class BallController : MonoBehaviour
                 {
                     SetDestination(currentSwipe.y > 0 ? Vector3.forward : Vector3.back);
                     audioManager.PlaySFX(audioManager.swipeSFX);
-                }   
+                }
 
                 // Left/Right swipe
                 if (currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
                 {
                     SetDestination(currentSwipe.x > 0 ? Vector3.right : Vector3.left);
-                    audioManager.PlaySFX(audioManager.swipeSFX);
                 }
             }
 
